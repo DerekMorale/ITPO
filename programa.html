@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <title>Orden</title>
+    <meta charset="UTF-8">
+    <link rel="StyleSheet" href="estilos1.css" type="text/css">
+<body>
+
+<p>Ingrese los siguientes datos para completar su pedido</p>
+<p id="subt2">Ingrese el número de pedidos deseaados:</p>
+
+
+<select id="npedidos" onchange="np();">
+  <option value="-">--Elija--</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+
+
+
+
+
+ </select>
+
+
+<p id="demo"></p>
+
+
+<p id="subt2">Elige un método de pago:</p>
+
+<select id="metodo" onchange="m();">
+  <option value="1">--Elija--</option>
+  <option value="Efectivo">Efectivo</option>
+  <option value="Tarjeta">Tarjeta</option>
+ </select>
+
+
+
+
+    <p id="subt2">Elige en que lugar desea comer:</p>
+
+
+    <select id="lugar" onchange="l();">
+      <option value="1">--Elija--</option>
+      <option value="Domicilio">Domicilio</option>
+      <option value="Establecimiento">Establecimiento</option>
+     </select>
+
+<br>
+<p id="m"></p>
+<p id="l"></p>
+
+<button onclick="c()" style="background-color: #91e77c;color: rgb(0, 0, 0);">Listo</button>
+
+<p id="c"></p>
+
+<br>
+
+    <p><button onclick="window.location.href ='final.html' " style="background-color: #f17d1e;color: rgb(0, 0, 0);">Finalizar Pedido</button></p>
+
+    <p><button onclick="window.location.href ='index.html' " style="background-color: #f17d1e;color: rgb(0, 0, 0);">Regresar a la Pagina Principal</button></p>
+
+
+
+
+<script>
+
+
+function np() {
+  var text;
+  var np = document.getElementById("npedidos").value;
+
+  switch(np) {
+    case "1":
+      precio=np*65
+      text = (np+' Menú, <br> Subtotal: '+precio)
+    break;
+    case "2":
+      precio=np*65
+      text = (np+' Menús, <br> Subtotal: '+precio)
+    break;
+    case "3":
+      precio=np*65
+      text = (np+' Menús, <br> Subtotal: '+precio)
+    break;
+    case "4":
+      precio=np*65
+      text = (np+' Menús, <br> Subtotal: '+precio)
+    break;
+    case "5":
+      precio=np*65
+      text = (np+' Menús, <br> Subtotal: '+precio)
+    break;
+    case "6":
+      precio=np*65
+      text = (np+' Menús, <br> Subtotal: '+precio)
+    break;
+    case "7":
+      precio=np*65
+      text = (np+' Menús, <br> Subtotal: '+precio)
+    break;
+    case "8":
+      precio=np*65
+      text = (np+' Menús, <br> Subtotal: '+precio)
+    break;
+    case "9":
+      precio=np*65
+      text = (np+' Menús, <br> Subtotal: '+precio)
+    break;
+    case "10":
+      precio=np*65
+      text = (np+' Menús, <br> Subtotal: '+precio)
+    break;
+    case "0":
+      precio=np*65
+      text = ('Debe ingresar un número de pedidos')
+    break;
+    default:
+    text = "El pedido es demasiado grande o no ingreso un numero de pedidos";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+
+
+function m() {
+  var text;
+  var m = document.getElementById("metodo").value;
+
+  switch(m) {
+      case "Efectivo":
+      text = ('El metodo de pago sera en efectivo <br> Tiene derecho a refill')
+    break;
+
+    case "Tarjeta":
+      text = ('El metodo de pago sera tarjeta <br> Obtendra un boleto de 10Q en su proxima compra')
+    break;
+    default:
+    text = "error";
+  }
+  document.getElementById("m").innerHTML = text;
+}
+
+function l() {
+  var text;
+  var l = document.getElementById("lugar").value;
+
+  switch(l) {
+      case "Domicilio":
+      text = ('El pedido sera enviado a su domicilio <br> se le agregara un 12% de propina')
+    break;
+    case "Establecimiento":
+      text = ('El pedido sera servido en el establecimiento <br> se le agregara un 10% de propina')
+    break;
+    default:
+    text = "error)";
+  }
+  document.getElementById("l").innerHTML = text;
+}
+
+
+function c() {
+  var text;
+  var np1 = document.getElementById("npedidos").value;
+  var l1 = document.getElementById("lugar").value;
+  var preprecio = np1*65
+  var preciototal = preprecio + preprecio * 0.10 ;
+  var preciototal1 = preprecio + preprecio * 0.12 ;
+
+
+
+  switch(l1) {
+      case "Domicilio":
+      text = ('Con la propina incluida del 12% <br> El precio final es: Q' + preciototal1)
+    break;
+    case "Establecimiento":
+      text = ('Con la propina incluida del 10% <br> El precio final es: Q' + preciototal)
+      break;
+    default:  
+    text = ('error');
+  }
+  document.getElementById("c").innerHTML = text;
+}
+
+
+
+
+</script>
+
+
+</body>
+</html>
