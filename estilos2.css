@@ -1,0 +1,84 @@
+body{background-color: #FFF9E2;}
+h1 {color: #5CE1E6; font-family: 'Courier New', Courier, monospace; font-size: 40px; text-align: center; text-decoration: none;}
+p{
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     text-align: justify;
+}
+
+h3 {
+    color: #5CE1E6; font-family: 'Courier New', Courier, monospace; font-size: 20px;
+}
+
+h4 {
+    color: #5CE1E6; font-family: 'Courier New', Courier, monospace; font-size: 15px;
+}
+
+#pago1 {
+    color: #D45618; font-family: 'Courier New', Courier, monospace; font-style: oblique; font-weight: bold; font-size: 18px;
+}
+
+#pago2 {
+    color: #ffffff; font-family: 'Courier New', Courier, monospace; font-style: oblique; font-weight: bold; font-size: 18px;
+}
+
+#formato {
+    color: #ffffff; font-family: 'Courier New', Courier, monospace; font-style: oblique; font-weight: bold; font-size: 18px;
+}
+
+input[name="mpago"] {
+	accent-color: #d86f3a; font-family: 'Courier New', Courier, monospace; font-style: oblique; font-weight: bold; font-size: 18px;
+}
+
+#subt2 {
+    color: white; font-weight: bold; font-size: 19px;
+}
+
+#bcontinuar {
+    background-color: #d86f3a; font-style: oblique;
+}
+
+#logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+.table {
+    display: table;
+    margin: 5;
+}
+
+#menuhorizontal {
+    margin: 3px;
+    padding: 3px;
+    list-style-type: none;
+    text-align: center;
+}
+
+
+#menuhorizontal a {
+    width: 100px;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    background-color: #2868BD;
+    padding: 3px 5px;
+    border-right: 5px solid #2868BD;
+    display:  block;
+
+}
+
+#menuhorizontal li {
+    float: left;
+    
+}
+
+#menuhorizontal a:hover {
+    background-color: #5CE1E6;
+}
+
+#menuhorizontal{ display: inline; 
+    
+}
